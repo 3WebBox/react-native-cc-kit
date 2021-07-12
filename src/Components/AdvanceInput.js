@@ -16,10 +16,8 @@ import {
   Text,
   View,
   StyleSheet,
-  Pressable,
   Switch,
   Platform,
-  ScrollView
 } from 'react-native';
 import { config } from '../../config';
 
