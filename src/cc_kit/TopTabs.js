@@ -38,7 +38,7 @@ class TopTabs extends Component {
         ]}
       >
         {items.map( (item, key) => {
-          return <Pressable
+          if(item.show) return <Pressable
             key={key}
             style={item.style || ScreenStyle.itemContainer}
             onPress={item.onPress || null}
@@ -63,9 +63,6 @@ const ScreenStyle = StyleSheet.create({
   },
   itemContainer: {
     paddingHorizontal: 15,
-    paddingVertical: 10,
-    alignItems: 'center',
-    justifyContent: 'center',
     borderBottomWidth: 0,
     borderBottomColor: '#ccc',
   }
