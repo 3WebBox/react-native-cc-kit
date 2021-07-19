@@ -150,7 +150,6 @@ export default class AdvanceInput extends Component {
       font = { fontFamily: this.state.descriptionFont }
 
     return <Text style={[
-
       this.state.descriptionStyle,
       font
     ]}>
@@ -162,7 +161,7 @@ export default class AdvanceInput extends Component {
     if(!this.state.showSwitch) return null;
 
     return (
-      <View>
+      <View style={{alignItems: 'flex-end'}}>
         <Switch
           trackColor={{ false: '#ddd', true: config.primaryColor }}
           thumbColor={"#efefef"}
