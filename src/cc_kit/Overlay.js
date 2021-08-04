@@ -121,9 +121,7 @@ class Overlay extends Component {
         animationType="slide"
         transparent
         visible={props.visible}
-        onRequestClose={() => {
-          Alert.alert("Modal has been closed.");
-        }}
+        onRequestClose={() => null}
         style={props.containerStyle || { backgroundColor: 'red'}}
       >
         <Pressable
